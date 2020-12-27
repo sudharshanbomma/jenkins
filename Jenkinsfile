@@ -11,9 +11,9 @@ pipeline{
       }
     }
     
-    stage("unit Test"){
+    stage("Build"){
       steps{
-        sh '${M2_HOME}/bin/mvn clean test:test'
+        sh '${M2_HOME}/bin/mvn clean packeage'
       }
     }
   }
